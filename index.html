@@ -10,7 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,32 +20,30 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container page-header-container">
+      <div class="container page-header__container">
         <a href="index.html" class="logo"
-          ><span class="logo-2nd-color">Web</span>Studio</a
+          ><span class="logo__span">Web</span>Studio</a
         >
-        <nav class="page-navigation">
-          <ul class="navigation-list">
+        <nav class="navigation">
+          <ul class="navigation__list">
             <li>
-              <a href="index.html" class="navigation-item agency-choice"
-                >Agencja</a
-              >
+              <a href="index.html" class="navigation__item choice">Agencja</a>
             </li>
             <li>
-              <a href="portfolio.html" class="navigation-item">Portfolio</a>
+              <a href="portfolio.html" class="navigation__item">Portfolio</a>
             </li>
-            <li><a href="" class="navigation-item">Kontakt</a></li>
+            <li><a href="" class="navigation__item">Kontakt</a></li>
           </ul>
         </nav>
         <div class="contact-navigation">
-          <a href="mailto:info@devstudio.com" class="contact-item">
-            <svg class="icon" width="16px" height="17px">
+          <a href="mailto:info@devstudio.com" class="contact-navigation__item">
+            <svg class="contact-navigation__icon" width="16px" height="17px">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
-          <a href="tel:+48111111111" class="contact-item">
-            <svg class="icon" width="16px" height="20px">
+          <a href="tel:+48111111111" class="contact-navigation__item">
+            <svg class="contact-navigation__icon" width="16px" height="20px">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +48 111 111 111
@@ -56,78 +54,66 @@
     <main>
       <article class="section main-art">
         <div class="container main-phrase-box">
-          <h1 class="main-phrase">
+          <h1 class="main-phrase-box__text">
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="main-button" data-modal-open>
+          <button type="button" class="main-phrase-box__button" data-modal-open>
             Zamów usługę
           </button>
           <div class="modal-overlay is-hidden" data-modal>
             <div class="modal-box">
-              <h3 class="modal-form-title">
+              <h3 class="modal-box__title">
                 Zostaw swoje dane w formularzu poniżej
               </h3>
-              <div class="modal-box-form">
-                <form class="data-form">
-                  <label class="data-label" for="username">
+              <div class="form">
+                <form class="form__data">
+                  <label class="form__label" for="username">
                     Imie
                     <div class="data-hover">
                       <input
-                        class="data-input"
+                        class="form__input"
                         type="text"
                         name="username"
                         id="username"
                       />
-                      <svg
-                        class="data-input-icon data-user-icon"
-                        width="12px"
-                        height="12px"
-                      >
+                      <svg class="form__icon" width="12px" height="12px">
                         <use href="./images/icons.svg#icon-user"></use>
                       </svg>
                     </div>
                   </label>
-                  <label class="data-label" for="user-phone">
+                  <label class="form__label" for="user-phone">
                     Telefon
                     <div class="data-hover">
                       <input
-                        class="data-input"
+                        class="form__input"
                         type="tel"
                         name="phone"
                         id="user-phone"
                       />
-                      <svg
-                        class="data-input-icon data-phone-icon"
-                        width="14px"
-                        height="14px"
-                      >
+                      <svg class="form__icon" width="14px" height="14px">
                         <use href="./images/icons.svg#icon-phone"></use>
                       </svg>
                     </div>
                   </label>
-                  <label class="data-label" for="user-email">
+                  <label class="form__label" for="user-email">
                     Email
                     <div class="data-hover">
                       <input
-                        class="data-input"
+                        class="form__input"
                         type="email"
                         name="email"
                         id="user-email"
                       />
-                      <svg
-                        class="data-input-icon data-phone-icon"
-                        width="19px"
-                        height="16px"
-                      >
+                      <svg class="form__icon" width="19px" height="16px">
                         <use href="./images/icons.svg#icon-envelope2"></use>
                       </svg>
                     </div>
                   </label>
-                  <label class="data-label" for="text-area">
+                  <label class="form__label" for="text-area">
                     Komentarz
                     <textarea
-                      class="data-input data-textarea"
+                      class="form__input form__input--textarea"
                       type="text"
                       name="text"
                       placeholder="Wprowadź tekst"
@@ -135,25 +121,23 @@
                       id="textarea"
                     ></textarea>
                   </label>
-                  <div class="data-checkbox-container">
+                  <div class="checkbox">
                     <input
-                      class="checkbox-appear-none data-checkbox-input"
+                      class="checkbox--appear-none checkbox__input"
                       type="checkbox"
                       id="checkbox-checking"
                     />
-                    <label class="data-checkbox-label" for="checkbox-checking">
+                    <label class="checkbox__label" for="checkbox-checking">
                       Oświadczam iż akceptuję&nbsp;
-                      <a class="data-checkbox-link" href="">Regulamin&nbsp;</a>
+                      <a class="checkbox__link" href="">Regulamin&nbsp;</a>
                       i&nbsp;
-                      <a class="data-checkbox-link" href=""
-                        >Polityke Prywatności</a
-                      >
+                      <a class="checkbox__link" href="">Polityke Prywatności</a>
                     </label>
                   </div>
-                  <button type="submit" class="data-button">Wyślij</button>
+                  <button type="submit" class="form__button">Wyślij</button>
                 </form>
               </div>
-              <button type="button" class="modal-button" data-modal-close>
+              <button type="button" class="modal-box__button" data-modal-close>
                 <svg class="x-icon" width="10px" height="10px">
                   <use href="./images/icons.svg#icon-X"></use>
                 </svg>
@@ -165,49 +149,49 @@
       <article class="section">
         <div class="container main-content">
           <div>
-            <div class="content-icon-box">
-              <svg class="content-icon" width="70px" height="70px">
+            <div class="main-content__box">
+              <svg class="main-content__icon" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h3 class="content-title">LOREM IPSUM</h3>
-            <p class="content-text">
+            <h3 class="main-content__title">LOREM IPSUM</h3>
+            <p class="main-content__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </div>
           <div>
-            <div class="content-icon-box">
-              <svg class="content-icon" width="70px" height="70px">
+            <div class="main-content__box">
+              <svg class="main-content__icon" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
             </div>
-            <h3 class="content-title">LOREM IPSUM</h3>
-            <p class="content-text">
+            <h3 class="main-content__title">LOREM IPSUM</h3>
+            <p class="main-content__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </div>
           <div>
-            <div class="content-icon-box">
-              <svg class="content-icon" width="70px" height="70px">
+            <div class="main-content__box">
+              <svg class="main-content__icon" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
             </div>
-            <h3 class="content-title">LOREM IPSUM</h3>
-            <p class="content-text">
+            <h3 class="main-content__title">LOREM IPSUM</h3>
+            <p class="main-content__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </div>
           <div>
-            <div class="content-icon-box">
-              <svg class="content-icon" width="70px" height="70px">
+            <div class="main-content__box">
+              <svg class="main-content__icon" width="70px" height="70px">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h3 class="content-title">LOREM IPSUM</h3>
-            <p class="content-text">
+            <h3 class="main-content__title">LOREM IPSUM</h3>
+            <p class="main-content__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
